@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>New Tab</title>
+	<link rel="stylesheet" href="newtab.css">
+	<link rel="icon" href="icons/icon_16.png">
+</head>
+
+<body>
+	<div id="clock">
+		00:00
+	</div>
+	<div id="search-bar">
+		<div id="search-change-btn" class="search-btn">
+			<img src="./icons/bing.png" alt="" srcset="">
+		</div>
+		<input type="text" id="input-search" onkeypress="handleKeyPress(event)" size="30" autocomplete="off" placeholder="搜索">
+		<div id="search-btn" class="search-btn">
+			<img src="./icons/search.png" alt="" srcset="">
+		</div>
+	</div>
+	<div id="urls">
+	</div>
+	<script src="newtab.js"></script>
+</body>
+
+</html>
