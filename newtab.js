@@ -33,11 +33,11 @@ function doSearch() {
     window.open(searchEngine[nowEngine].url + input.value);
 }
 
-function handleKeyPress(event) {
-    if (event.keyCode === 13) {
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
         doSearch();
     }
-}
+});
 
 let searchBtn = document.getElementById("search-btn");
 searchBtn.onclick = doSearch;
